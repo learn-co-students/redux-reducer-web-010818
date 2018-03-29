@@ -1,6 +1,6 @@
-let defaultState = { friends: [] };
+let initialState = { friends: [] };
 
-export function manageFriends(state = defaultState, action) {
+export function manageFriends(state = initialState, action) {
   switch (action.type) {
     case 'ADD_FRIEND':
       return { ...state, friends: [...state.friends, action.friend] };

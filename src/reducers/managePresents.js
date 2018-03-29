@@ -1,6 +1,6 @@
-let defaultState = { numberOfPresents: 0 };
+let initialState = { numberOfPresents: 0 };
 
-export function managePresents(state = defaultState, action) {
+export function managePresents(state = initialState, action) {
   switch (action.type) {
     case 'INCREASE':
       return Object.assign({}, state, {
